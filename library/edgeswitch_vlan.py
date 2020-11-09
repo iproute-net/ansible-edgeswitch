@@ -388,7 +388,7 @@ def parse_interfaces_switchport(cmd_out):
 
 
 def map_ports_to_obj(module):
-    return parse_interfaces_switchport(run_commands(module, ['show interfaces switchport'])[0])
+    return parse_interfaces_switchport(run_commands(module, ['show interface switchport'])[0])
 
 
 def map_config_to_obj(module):
